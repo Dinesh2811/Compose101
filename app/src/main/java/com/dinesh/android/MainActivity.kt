@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MaterialTheme {
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-
+                    com.dinesh.android.basic.text_field.MyLayoutView()
                 }
             }
         }
