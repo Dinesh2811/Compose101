@@ -1,4 +1,5 @@
-package com.dinesh.android.scaffold_layout.bottom_navigation
+package com.dinesh.android.scaffold_layout.bottom_navigation.v1
+
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
