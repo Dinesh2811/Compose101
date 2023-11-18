@@ -1,5 +1,6 @@
 package com.dinesh.android.basic.text_field
 
+import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -22,6 +23,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
@@ -33,10 +36,16 @@ import kotlinx.coroutines.delay
 @Composable
 fun MyLayoutView(){
     var inputValue by remember { mutableStateOf("") }
+    val focusManager = LocalFocusManager.current
 
     Column(modifier = Modifier
         .fillMaxSize()
-        .verticalScroll(rememberScrollState()),
+        .verticalScroll(rememberScrollState())
+        .pointerInput(Unit) {
+            detectTapGestures(
+                onTap = { focusManager.clearFocus() }
+            )
+        },
         horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
 //        MyTextField(value = inputValue, onValueChanged = { inputValue = it })
         MyTextField()
