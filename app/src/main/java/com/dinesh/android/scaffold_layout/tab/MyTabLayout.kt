@@ -15,8 +15,10 @@ import androidx.compose.material.Tab
 import androidx.compose.material.TabRow
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.ArrowBackIosNew
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Place
@@ -97,7 +99,7 @@ private fun MyTopAppBar(scrollBehavior: TopAppBarScrollBehavior, surfaceColor: C
         colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = surfaceColor),
         navigationIcon = {
             IconButton(onClick = { /*TODO*/ }) {
-                Icon(imageVector = Icons.Default.ArrowBack, contentDescription = "Back")
+                Icon(imageVector = Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
             }
         }, actions = {
             IconButton(onClick = { /*TODO*/ }) {
