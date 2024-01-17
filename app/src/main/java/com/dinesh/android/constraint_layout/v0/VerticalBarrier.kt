@@ -24,7 +24,6 @@ import androidx.constraintlayout.compose.ConstrainedLayoutReference
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.dinesh.android.R
-import com.dinesh.android.testing.v1.hardcodedPlaidAssetsResponse
 
 
 @Composable
