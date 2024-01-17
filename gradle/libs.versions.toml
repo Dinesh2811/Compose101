@@ -43,6 +43,8 @@ dagger = "2.49"
 
 hilt-android = "2.49"
 hilt-compiler = "1.1.0"
+constraintlayout-core = "1.0.4"
+constraintlayout-solver = "2.0.4"
 
 
 [libraries]
@@ -150,6 +152,8 @@ hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt-
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-compiler" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt-android" }
 hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hilt-compiler" }
+androidx-constraintlayout-core = { group = "androidx.constraintlayout", name = "constraintlayout-core", version.ref = "constraintlayout-core" }
+androidx-constraintlayout-solver = { group = "androidx.constraintlayout", name = "constraintlayout-solver", version.ref = "constraintlayout-solver" }
 
 
 

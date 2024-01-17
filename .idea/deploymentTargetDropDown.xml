@@ -2,6 +2,15 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="AutoComplete">
+        <State />
+      </entry>
+      <entry key="MyLayoutView">
+        <State />
+      </entry>
+      <entry key="MyScreen">
+        <State />
+      </entry>
       <entry key="TestingLayout">
         <State />
       </entry>
